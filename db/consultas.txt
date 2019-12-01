@@ -1,0 +1,10 @@
+SELECT TU.id, EQ.nome
+FROM (((public."Turma" as TU JOIN public."Turma_Aluno" as TA ON TU.id = TA."id_Turma") 
+	  	JOIN public."Aluno" as AL ON TA."CPF_Aluno" = AL."CPF")
+	  	JOIN public."Exercicio" as EX ON AL."CPF" = EX."CPF_Aluno")
+		JOIN public."Equipamento" as EQ ON EX."id_Equipamento" = EQ.id 
+
+SELECT TU.id, EQ.nome
+FROM ((public."Turma" as TU JOIN public."Turma_Aluno" as TA ON TU.id = TA."id_Turma") 	  	
+	  	JOIN public."Exercicio" as EX ON TA."CPF_Aluno" = EX."CPF_Aluno")
+		JOIN public."Equipamento" as EQ ON EX."id_Equipamento" = EQ.id 

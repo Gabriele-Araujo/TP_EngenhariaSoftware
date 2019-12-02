@@ -1,5 +1,5 @@
 # TP_EngenhariaSoftware
-Esse repositório contém o trabalho prático, programado na linguagem java, da disciplina de Engenharia de Software 1, do curso de Sistemas de Informação. Instruções: 
+Esse repositório contém o trabalho prático, programado na linguagem java, da disciplina de Engenharia de Software 1, do curso de Sistemas de Informação.
 
 ## Instalação:      
 1.      Instalar NetBeans (recomendado ter o JDK 13)       

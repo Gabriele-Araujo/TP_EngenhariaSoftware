@@ -620,7 +620,7 @@ public class OpFuncionarios extends javax.swing.JPanel {
                 especialidadeCadFunc.getText().isBlank() ||
                 telefoneCadFunc.getText().isBlank() ||
                 !isValidEmailAddress(emailCadFunc.getText()))
-            throw new Exception();
+                throw new Exception("Verifique se todos os campos estão preenchidos e se o email é válido");
 
             tempFunc.setNome(nomeCadFunc.getText());
             tempFunc.setCPF(cpfCadFunc.getText());
